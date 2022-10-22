@@ -18,7 +18,11 @@ const server = http.createServer((req, res) => {
     } else if (pathName === '/ai') {
         res.end('hello from ai');
     } else {
-        res.end('hello from organization');
+        res.writeHead(404, {
+            'Content-type': 'text/html',
+            'Jax-header': 'mccluskey'
+        });
+        res.end('<h1>there has been an error</h1>');
     }
 });
 
