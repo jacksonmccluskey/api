@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Amelia",
+        "diagnosis": "Anxiety",
+        "diagnosisDate": "12-31-2019",
+        "medication": "Clonazepam",
+        "medicationStart": "01-01-2020",
+        "medicationEnd": null
+    },
+    {
+        "name": "Ben",
+        "diagnosis": "Bipolar Disorder",
+        "diagnosisDate": "12-31-2020",
+        "medication": "Clonazepam",
+        "medicationStart": "01-01-2021",
+        "medicationEnd": null
+    },
+    {
+        "name": "Dana",
+        "diagnosis": "Depression",
+        "diagnosisDate": "12-31-2021",
+        "medication": "Escitalopram",
+        "medicationStart": "01-01-2022",
+        "medicationEnd": null
+    }
+]

@@ -7,7 +7,7 @@ const url = require('url');
 const server = http.createServer((req, res) => {
     const pathName = req.url;
 
-    if (pathName === '/engineering') {
+    if (pathName === '/engineering' || pathName === '/') {
         res.end('hello from engineering');
     } else if (pathName === '/product') {
         res.end('hello from product');
@@ -17,6 +17,12 @@ const server = http.createServer((req, res) => {
         res.end('hello from business');
     } else if (pathName === '/ai') {
         res.end('hello from ai');
+    } else if (pathName === '/api') {
+        fs.readFile(`${__dirname}/data/patient.json`, 'utf-8', (err, data) => {
+            const patientData = JSON.parse(data);
+            console.log(patientData);
+        })
+        res.end('api')  
     } else {
         res.writeHead(404, {
             'Content-type': 'text/html',
