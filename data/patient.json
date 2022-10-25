@@ -1,26 +1,124 @@
 [
     {
-        "name": "Amelia",
-        "diagnosis": "Anxiety",
-        "diagnosisDate": "12-31-2019",
-        "medication": "Clonazepam",
-        "medicationStart": "01-01-2020",
-        "medicationEnd": null
-    },
-    {
-        "name": "Ben",
-        "diagnosis": "Bipolar Disorder",
-        "diagnosisDate": "12-31-2020",
-        "medication": "Clonazepam",
-        "medicationStart": "01-01-2021",
-        "medicationEnd": null
-    },
-    {
-        "name": "Dana",
-        "diagnosis": "Depression",
-        "diagnosisDate": "12-31-2021",
-        "medication": "Escitalopram",
-        "medicationStart": "01-01-2022",
-        "medicationEnd": null
+        "phoneNumber": "+13332221111",
+        "firstName": "Amelia",
+        "lastName": "Appleseed",
+        "dateOfBirth": "01-01-1999",
+        "symptoms": [
+            { 
+                "name": "Panic, fear, and uneasiness", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 7 
+            },
+            { 
+                "name": "Feelings of panic, doom, or danger", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 9 
+            },
+            { 
+                "name": "Sleep problems", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 8 
+            },
+            { 
+                "name": "Not being able to stay calm and still", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 10 
+            },
+            { 
+                "name": "Cold, sweaty, numb, or tingling hands or feet", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 1 
+            },
+            { 
+                "name": "Shortness of breath", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 8 
+            },
+            { 
+                "name": "Breathing faster and more quickly than normal (hyperventilation)", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 2 
+            },
+            { 
+                "name": "Heart palpitations", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 3 
+            },
+            { 
+                "name": "Dry mouth", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 2 
+            },
+            { 
+                "name": "Nausea", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 1 
+            },
+            { 
+                "name": "Tense muscles", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 6 
+            },
+            { 
+                "name": "Dizziness", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 8 
+            },
+            { 
+                "name": "Thinking about a problem over and over again and unable to stop (rumination)", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 9 
+            },
+            { 
+                "name": "Inability to concentrate", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 10 
+            },
+            { 
+                "name": "Intensely or obsessively avoiding feared objects or places", 
+                "startDate": "12-01-2019",
+                "endDate": "12-31-2019",
+                "intensity": 8 
+            }
+        ],
+        "diagnoses": [
+            {
+                "name": "Generalized anxiety disorder",
+                "startDate": "12-31-2019",
+                "endDate": null
+            },
+            {
+                "name": "Panic disorder",
+                "startDate": "12-31-2019",
+                "endDate": null
+            }
+        ],
+        "medications": [
+            { 
+                "name": "Clonazepam",
+                "strength": "0.5",
+                "unit": "mg",
+                "quantity": 2,
+                "supply": 2,
+                "formCode": "tablets",
+                "startDate": "01-01-2020",
+                "endDate": null 
+            }
+        ]
     }
 ]

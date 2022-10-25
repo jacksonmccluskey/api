@@ -4,25 +4,17 @@ const url = require('url');
 
 // SERVER
 
+const data = fs.readFileSync(`${__dirname}/data/patient.json`, 'utf-8');
+const dataObj = JSON.parse(data);
+
 const server = http.createServer((req, res) => {
     const pathName = req.url;
 
     if (pathName === '/engineering' || pathName === '/') {
         res.end('hello from engineering');
-    } else if (pathName === '/product') {
-        res.end('hello from product');
-    } else if (pathName === '/design') {
-        res.end('hello from design');
-    } else if (pathName === '/business') {
-        res.end('hello from business');
-    } else if (pathName === '/ai') {
-        res.end('hello from ai');
     } else if (pathName === '/api') {
-        fs.readFile(`${__dirname}/data/patient.json`, 'utf-8', (err, data) => {
-            const patientData = JSON.parse(data);
-            console.log(patientData);
-        })
-        res.end('api')  
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(data);
     } else {
         res.writeHead(404, {
             'Content-type': 'text/html',
